@@ -4,7 +4,7 @@ import streamlit as st
 
 st.set_page_config(page_title="AI Image Generator", page_icon="🎨")
 
-client = Together(api_key = "tgp_v1_8LRZwTODkvtbGV_0eGsL0w3VuddqaoB_a6PpUbhlSAA")
+client = Together(api_key = "")
 st.title("🎨 AI Image Generator with Together.AI")
 prompt = st.text_area("Enter your image description:")
 
@@ -44,4 +44,5 @@ if st.button("Generate Image"):
              st.error(e)
     else:
         st.error("Please enter an image description.")
+
 
